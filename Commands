@@ -1,0 +1,7 @@
+sudo tail -f /var/log/syslog
+ ls -l /dev/simple_char_device 
+sudo mknod -m 666 /dev/simple_char_device c 240 0
+
+cat /proc/devices
+
+ make -C /lib/modules/$(uname -r)/build M=$PWD modules

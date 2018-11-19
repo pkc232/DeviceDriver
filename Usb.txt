@@ -1,0 +1,18 @@
+USB for communication between a host and a device.
+
+Device may have upto 31 endpoints
+Each of them gets a unique Endpoint address
+Endpoint 0 may transfer data in both directions
+
+All other end points may transfer data in one direction:
+IN : device -> host
+OUT :host->device
+
+Direction of endpoint from host perspective
+
+Endpoint types:
+
+Control
+Interrupt
+Bulk
+Isochronous
